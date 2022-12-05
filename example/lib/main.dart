@@ -34,12 +34,54 @@ class MainWidget extends StatelessWidget {
           brightness: Brightness.dark,
           backgroundColor: const Color(0xff3c3c3c),
         ),
-        home: SampleWidget());
+        home: const MainScreen());
   }
 }
 
-class SampleWidget extends StatefulWidget {
-  SampleWidget({Key? key}) : super(key: key);
+
+class MainScreen extends StatelessWidget {
+  const MainScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                child: const Text('Fixed Stepper'),
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil<dynamic>(
+                    context,
+                    MaterialPageRoute<dynamic>(builder: (BuildContext context) => FixedStepperSampleScreen()),
+                        (route) => true, //if you want to disable back feature set to false
+                  );
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Scrollable Stepper'),
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil<dynamic>(
+                    context,
+                    MaterialPageRoute<dynamic>(builder: (BuildContext context) => ScrollableStepperSampleScreen()),
+                        (route) => true, //if you want to disable back feature set to false
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+class FixedStepperSampleScreen extends StatefulWidget {
+  FixedStepperSampleScreen({Key? key}) : super(key: key);
 
   List<GSStepModel> stepperItemList = [
     GSStepModel(
@@ -94,10 +136,10 @@ class SampleWidget extends StatefulWidget {
   ];
 
   @override
-  State<SampleWidget> createState() => _SampleWidgetState();
+  State<FixedStepperSampleScreen> createState() => _FixedStepperSampleScreenState();
 }
 
-class _SampleWidgetState extends State<SampleWidget> {
+class _FixedStepperSampleScreenState extends State<FixedStepperSampleScreen> {
   int currentStep = 0;
   late GSStepper stepper;
 
@@ -119,6 +161,210 @@ class _SampleWidgetState extends State<SampleWidget> {
                 style: StepperStyle(),
                 steps: widget.stepperItemList,
                 stepperData: GSStepperData(),
+                onComplete: () {
+                  // on complete steps
+                },
+                onNextStep: (index) {
+                  currentStep = index;
+                  setState(() {});
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton(
+                      child: const Text('Previous'),
+                      onPressed: () {
+                        if (currentStep > 0) {
+                          stepper.goToStep(
+                            currentStatus: widget.stepperItemList[stepper.currentIndex].status!,
+                            nextIndex: stepper.currentIndex - 1,
+                            currentStepProgress: widget.stepperItemList[stepper.currentIndex].progress,
+                            nextStepProgress: widget.stepperItemList[stepper.currentIndex - 1].progress,
+                          );
+                        }
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Expanded(
+                    child: ElevatedButton(
+                      child: const Text('Next'),
+                      onPressed: () {
+                        if (currentStep < widget.stepperItemList.length) {
+                          stepper.goToStep(
+                              currentStatus: GSStepStatusEnum.success,
+                              nextIndex: stepper.currentIndex + 1,
+                              currentStepProgress: 100,
+                              nextStepProgress: 30);
+                        }
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class ScrollableStepperSampleScreen extends StatefulWidget {
+  ScrollableStepperSampleScreen({Key? key}) : super(key: key);
+
+  List<GSStepModel> stepperItemList = [
+    GSStepModel(
+      globalKey: GlobalKey(),
+      icon: SvgPicture.asset(
+        'assets/ic_user.svg',
+        color: Colors.white,
+        height: 12,
+        width: 12,
+      ),
+      status: GSStepStatusEnum.inActive,
+      progress: 0,
+      stepName: 'User Information Step',
+      stepNumber: 'Step One',
+    ),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_information.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Information',
+        stepNumber: 'Step two'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_location.svg',
+          color: Colors.white,
+          height: 5,
+          width: 5,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Shop Information',
+        stepNumber: 'Step tree'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_store.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_store.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_store.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_store.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_store.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_store.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: SvgPicture.asset(
+          'assets/ic_store.svg',
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+  ];
+
+  @override
+  State<ScrollableStepperSampleScreen> createState() => _ScrollableStepperSampleScreenState();
+}
+
+class _ScrollableStepperSampleScreenState extends State<ScrollableStepperSampleScreen> {
+  int currentStep = 0;
+  late GSStepper stepper;
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Column(
+          children: [
+            Expanded(
+              child: stepper = GSStepper.scrollable(
+                currentIndex: currentStep,
+                style: StepperStyle(),
+                steps: widget.stepperItemList,
+                stepperData: GSStepperData(),
+                stepWidth: 100,
                 onComplete: () {
                   // on complete steps
                 },
