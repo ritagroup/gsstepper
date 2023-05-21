@@ -1,3 +1,6 @@
 library gsstepper;
 
 
+class Gsstepper {
+
+}

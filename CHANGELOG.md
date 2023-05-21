@@ -1,3 +1,5 @@
 ## 0.0.1
+* Initialize GSStepper
 
-* TODO: Describe initial release.
+## 0.0.2
+* Fix problems
