@@ -1,13 +1,14 @@
-# GSStepper
+# Your Package Name
 
-A brief description of what this package does.
+A new Flutter package.
 
-## Installation
+## Usage
 
-In your `pubspec.yaml` file within your Flutter Project:
+To use this package, add `your_package_name` as a [dependency](https://flutter.dev/docs/development/packages-and-plugins/using-packages) in your `pubspec.yaml` file.
 
-```yaml
-dependencies:
-  package_name: ^version_number
+## Example
 
-import 'package:package_name/package_name.dart';
+```dart
+import 'package:your_package_name/your_package_name.dart';
+
+// TODO: Add usage example code here
