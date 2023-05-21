@@ -11,14 +11,12 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-GSStepper is a good package
+GSStepper package in Flutter is a collection of customizable widgets that help guide the user through a multi-step process or form.
 ## Features
-GSStepper is a good package
-
+GSStepper package in Flutter is a collection of customizable widgets that help guide the user through a multi-step process or form.
 ## Getting started
 
-GSStepper is a good package
-
+GSStepper package in Flutter is a collection of customizable widgets that help guide the user through a multi-step process or form.
 ## Usage
 
 
