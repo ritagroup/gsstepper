@@ -7,7 +7,6 @@ import 'package:gsstepper/GSStepper/values/gs_stepper_colors.dart';
 
 import '../model/gs_steper_data.dart';
 
-
 // ignore: must_be_immutable
 class StepperStatues extends StatelessWidget {
   final GSStepStatusEnum status;

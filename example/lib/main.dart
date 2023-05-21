@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gsstepper/GSStepper/model/gs_steper_data.dart';
 import 'package:gsstepper/GSStepper/model/step_model.dart';
 import 'package:gsstepper/GSStepper/model/stepper_style.dart';
