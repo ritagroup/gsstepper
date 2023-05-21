@@ -1,6 +1,6 @@
-# gsstepper_example
+# example
 
-Demonstrates how to use the gsstepper plugin.
+A new Flutter project.
 
 ## Getting Started
 
