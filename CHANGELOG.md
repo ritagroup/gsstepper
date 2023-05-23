@@ -3,3 +3,7 @@
 
 ## 0.0.2
 * Fix problems
+
+## 0.0.3
+* Fix some bug
+
