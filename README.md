@@ -5,6 +5,7 @@ GSStepper is a Flutter package that provides a custom stepper widget. It allows 
 You can customize the stepper to fit your application's design by setting various properties such as colors, sizes, icons, and labels. Plus, you can easily track the user's progress by updating the status and progress values of each step.
 
 
+
 ## Installation   
 
 To use this package, add `gsstepper` as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/packages-and-plugins/using-packages).
