@@ -103,3 +103,10 @@ List<GSStepModel> stepperItemList = [
 
 GSSTEPPER provides a simple and customizable way to create a step-by-step process in your Flutter application. It can be used for user onboarding, form submission, or any other multi-step tasks.
 
+
+## Contributors
+<a href="https://github.com/ritagroup/gsstepper/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ritagroup/gsstepper" />
+</a>
+
+
