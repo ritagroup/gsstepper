@@ -45,6 +45,7 @@ stepper = GSStepper.scrollable(
               ),
             )
 ```
+![Alt Text](https://github.com/ritagroup/gsstepper/blob/main/step_done.gif)
 
 Or you can use this way if you want fixed GSStepper:
 ```dart
@@ -64,6 +65,8 @@ stepper = GSStepper.fixed(
             ),
           )
 ```
+
+![Alt Text](https://github.com/ritagroup/gsstepper/blob/main/step_faild.gif)
 
 ## Customization
 
