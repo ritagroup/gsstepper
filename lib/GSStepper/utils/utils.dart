@@ -8,4 +8,5 @@ class Utils {
         Localizations.localeOf(context).languageCode == 'ps' ||
         Localizations.localeOf(context).languageCode == 'ur';
   }
+  
 }
