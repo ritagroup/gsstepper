@@ -1,6 +1,6 @@
 name: gsstepper
 description: GSStepper package in Flutter is a collection of customizable widgets that help guide the user through a multi-step process or form.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/ritagroup/gsstepper
 
 environment:
