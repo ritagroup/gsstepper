@@ -56,7 +56,7 @@ class MainScreen extends StatelessWidget {
                   Navigator.pushAndRemoveUntil<dynamic>(
                     context,
                     MaterialPageRoute<dynamic>(builder: (BuildContext context) => FixedStepperSampleScreen()),
-                        (route) => true, //if you want to disable back feature set to false
+                    (route) => true, //if you want to disable back feature set to false
                   );
                 },
               ),
@@ -66,7 +66,7 @@ class MainScreen extends StatelessWidget {
                   Navigator.pushAndRemoveUntil<dynamic>(
                     context,
                     MaterialPageRoute<dynamic>(builder: (BuildContext context) => ScrollableStepperSampleScreen()),
-                        (route) => true, //if you want to disable back feature set to false
+                    (route) => true, //if you want to disable back feature set to false
                   );
                 },
               ),
@@ -85,7 +85,8 @@ class FixedStepperSampleScreen extends StatefulWidget {
   List<GSStepModel> stepperItemList = [
     GSStepModel(
       globalKey: GlobalKey(),
-      icon: const Icon(Icons.store,
+      icon: const Icon(
+        Icons.store,
         color: Colors.white,
         size: 12,
       ),
@@ -96,7 +97,8 @@ class FixedStepperSampleScreen extends StatefulWidget {
     ),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -106,7 +108,8 @@ class FixedStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step two'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -116,7 +119,8 @@ class FixedStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step tree'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -214,7 +218,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
   List<GSStepModel> stepperItemList = [
     GSStepModel(
       globalKey: GlobalKey(),
-      icon: const Icon(Icons.store,
+      icon: const Icon(
+        Icons.store,
         color: Colors.white,
         size: 12,
       ),
@@ -225,7 +230,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
     ),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -235,7 +241,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step two'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -245,7 +252,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step tree'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -255,17 +263,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step four'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
-          color: Colors.white,
-         size: 12,
-        ),
-        status: GSStepStatusEnum.inActive,
-        progress: 0,
-        stepName: 'Photos',
-        stepNumber: 'Step four'),
-    GSStepModel(
-        globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -275,7 +274,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step four'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -285,7 +285,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step four'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -295,7 +296,8 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step four'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
@@ -305,7 +307,19 @@ class ScrollableStepperSampleScreen extends StatefulWidget {
         stepNumber: 'Step four'),
     GSStepModel(
         globalKey: GlobalKey(),
-        icon: const Icon(Icons.store,
+        icon: const Icon(
+          Icons.store,
+          color: Colors.white,
+          size: 12,
+        ),
+        status: GSStepStatusEnum.inActive,
+        progress: 0,
+        stepName: 'Photos',
+        stepNumber: 'Step four'),
+    GSStepModel(
+        globalKey: GlobalKey(),
+        icon: const Icon(
+          Icons.store,
           color: Colors.white,
           size: 12,
         ),
