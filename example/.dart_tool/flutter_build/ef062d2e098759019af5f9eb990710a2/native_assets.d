@@ -1,0 +1,1 @@
+ /Users/saeed/dev/Projects/My\ Projects/GSStepper/example/.dart_tool/flutter_build/ef062d2e098759019af5f9eb990710a2/native_assets.yaml: 
