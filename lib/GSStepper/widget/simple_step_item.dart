@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:gsstepper/GSStepper/model/gs_steper_data.dart';
 import 'package:gsstepper/GSStepper/utils/utils.dart';
 import 'package:gsstepper/GSStepper/widget/stepper_status.dart';
-import 'package:syncfusion_flutter_gauges/gauges.dart';
+
 
 import '../model/step_model.dart';
 import '../model/stepper_style.dart';
+import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 // ignore: must_be_immutable
 class StepperSimpleItem extends StatelessWidget {
