@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a237baaa-90c9-47ee-9b08-9f0f56ff3421" name="Changes" comment="add simple stepper type" />
+    <list default="true" id="a237baaa-90c9-47ee-9b08-9f0f56ff3421" name="Changes" comment="UPDATE version of syncfusion_flutter_charts">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/.dart_tool/flutter_build/44bcfa1b9bacc0ad6acac7fd40d93153/outputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/example/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,11 +91,21 @@
       <option name="presentableId" value="Default" />
       <updated>1718259862432</updated>
     </task>
+    <task id="LOCAL-00001" summary="UPDATE version of syncfusion_flutter_charts">
+      <option name="closed" value="true" />
+      <created>1721079416289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721079416289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add simple stepper type" />
-    <option name="LAST_COMMIT_MESSAGE" value="add simple stepper type" />
+    <MESSAGE value="UPDATE version of syncfusion_flutter_charts" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE version of syncfusion_flutter_charts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
