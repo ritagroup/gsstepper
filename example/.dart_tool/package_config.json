@@ -33,9 +33,9 @@
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.8",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "fake_async",
@@ -51,25 +51,25 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Users/saeed/dev/FlutterSdk/flutterSdk-3.7.3/flutter_macos_3/packages/flutter",
+      "rootUri": "file:///Users/saeed/dev/FlutterSdk/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "2.17"
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///Users/saeed/dev/FlutterSdk/flutterSdk-3.7.3/flutter_macos_3/packages/flutter_test",
+      "rootUri": "file:///Users/saeed/dev/FlutterSdk/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "get",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/get-4.6.6",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/get-4.6.5",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -81,33 +81,33 @@
     },
     {
       "name": "intl",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/intl-0.19.0",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/intl-0.18.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "leak_tracker",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/leak_tracker-10.0.4",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_flutter_testing",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.3",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_testing",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/leak_tracker_testing-2.0.1",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "lints",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/lints-2.1.1",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/lints-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.17"
     },
     {
       "name": "matcher",
@@ -123,7 +123,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/meta-1.11.0",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/meta-1.12.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -135,7 +135,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Users/saeed/dev/FlutterSdk/flutterSdk-3.7.3/flutter_macos_3/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/saeed/dev/FlutterSdk/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -165,13 +165,13 @@
     },
     {
       "name": "syncfusion_flutter_core",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/syncfusion_flutter_core-26.1.42",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/syncfusion_flutter_core-20.4.54",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "syncfusion_flutter_gauges",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/syncfusion_flutter_gauges-26.1.42",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/syncfusion_flutter_gauges-20.4.54",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -183,7 +183,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/test_api-0.6.1",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/test_api-0.7.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -195,9 +195,9 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
+      "rootUri": "file:///Users/saeed/.pub-cache/hosted/pub.dev/vm_service-14.2.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.3"
     },
     {
       "name": "example",
@@ -206,7 +206,10 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2024-07-16T16:12:38.104492Z",
+  "generated": "2025-01-07T06:42:43.208835Z",
   "generator": "pub",
-  "generatorVersion": "3.3.0"
+  "generatorVersion": "3.4.3",
+  "flutterRoot": "file:///Users/saeed/dev/FlutterSdk/flutter",
+  "flutterVersion": "3.22.2",
+  "pubCache": "file:///Users/saeed/.pub-cache"
 }
