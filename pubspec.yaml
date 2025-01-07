@@ -12,7 +12,6 @@ dependencies:
     sdk: flutter
   get: ^4.6.5
   syncfusion_flutter_gauges: ^20.2.38
-  figma_squircle: ^0.5.3
 
 dev_dependencies:
   flutter_test:
