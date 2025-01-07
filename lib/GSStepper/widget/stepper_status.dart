@@ -1,4 +1,3 @@
-import 'package:figma_squircle/figma_squircle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gsstepper/GSStepper/model/step_model.dart';
@@ -45,9 +44,9 @@ class StepperStatues extends StatelessWidget {
         textStyle = style.activeStatusTextStyle;
         decoration = BoxDecoration(
           color: style.activeStatusBackgroundColor,
-          borderRadius: SmoothBorderRadius(
-            cornerRadius: 15.0,
-            cornerSmoothing: 1,
+          borderRadius: BorderRadius.circular(
+            15.0,
+
           ),
           border: Border.all(
             width: 0.5,
@@ -61,9 +60,9 @@ class StepperStatues extends StatelessWidget {
         textStyle = style.inActiveStatusTextStyle;
         decoration = BoxDecoration(
             color: style.inActiveStatusBackgroundColor,
-            borderRadius: SmoothBorderRadius(
-              cornerRadius: 15.0,
-              cornerSmoothing: 1,
+            borderRadius: BorderRadius.circular(
+              15.0,
+
             ),
             border: Border.all(width: 0.5, color: GSStepperColor.textColor2));
         break;
@@ -72,9 +71,9 @@ class StepperStatues extends StatelessWidget {
         textStyle = style.successStatusTextStyle;
         decoration = BoxDecoration(
           color: style.successStatusBackgroundColor,
-          borderRadius: SmoothBorderRadius(
-            cornerRadius: 15.0,
-            cornerSmoothing: 1,
+          borderRadius: BorderRadius.circular(
+            15.0,
+
           ),
           border: Border.all(
             width: 0.5,
@@ -87,9 +86,9 @@ class StepperStatues extends StatelessWidget {
         textStyle = style.errorStatusTextStyle;
         decoration = BoxDecoration(
           color: style.errorStatusBackgroundColor,
-          borderRadius: SmoothBorderRadius(
-            cornerRadius: 15.0,
-            cornerSmoothing: 1,
+          borderRadius: BorderRadius.circular(
+            15.0,
+
           ),
           border: Border.all(
             width: 0.5,
