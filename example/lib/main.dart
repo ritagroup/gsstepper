@@ -56,7 +56,7 @@ class MainScreen extends StatelessWidget {
                   Navigator.pushAndRemoveUntil<dynamic>(
                     context,
                     MaterialPageRoute<dynamic>(builder: (BuildContext context) => FixedStepperSampleScreen()),
-                    (route) => true, //if you want to disable back feature set to false
+                        (route) => true, //if you want to disable back feature set to false
                   );
                 },
               ),
@@ -66,7 +66,7 @@ class MainScreen extends StatelessWidget {
                   Navigator.pushAndRemoveUntil<dynamic>(
                     context,
                     MaterialPageRoute<dynamic>(builder: (BuildContext context) => ScrollableStepperSampleScreen()),
-                    (route) => true, //if you want to disable back feature set to false
+                        (route) => true, //if you want to disable back feature set to false
                   );
                 },
               ),
@@ -176,9 +176,9 @@ class _FixedStepperSampleScreenState extends State<FixedStepperSampleScreen> {
                         if (currentStep > 0) {
                           stepper.goToStep(
                             currentStatus: widget.stepperItemList[stepper.currentIndex].status!,
-                            nextIndex: stepper.currentIndex - 1,
-                            currentStepProgress: widget.stepperItemList[stepper.currentIndex].progress,
-                            nextStepProgress: widget.stepperItemList[stepper.currentIndex - 1].progress,
+                            newIndex: stepper.currentIndex - 1,
+                            oldStepProgress: widget.stepperItemList[stepper.currentIndex].progress,
+                            newStepProgress: widget.stepperItemList[stepper.currentIndex - 1].progress,
                           );
                         }
                       },
@@ -194,9 +194,9 @@ class _FixedStepperSampleScreenState extends State<FixedStepperSampleScreen> {
                         if (currentStep < widget.stepperItemList.length) {
                           stepper.goToStep(
                               currentStatus: GSStepStatusEnum.success,
-                              nextIndex: stepper.currentIndex + 1,
-                              currentStepProgress: 100,
-                              nextStepProgress: 30);
+                              newIndex: stepper.currentIndex + 1,
+                              oldStepProgress: 100,
+                              newStepProgress: 30);
                         }
                       },
                     ),
@@ -371,9 +371,9 @@ class _ScrollableStepperSampleScreenState extends State<ScrollableStepperSampleS
                         if (currentStep > 0) {
                           stepper.goToStep(
                             currentStatus: widget.stepperItemList[stepper.currentIndex].status!,
-                            nextIndex: stepper.currentIndex - 1,
-                            currentStepProgress: widget.stepperItemList[stepper.currentIndex].progress,
-                            nextStepProgress: widget.stepperItemList[stepper.currentIndex - 1].progress,
+                            newIndex: stepper.currentIndex - 1,
+                            oldStepProgress: widget.stepperItemList[stepper.currentIndex].progress,
+                            newStepProgress: widget.stepperItemList[stepper.currentIndex - 1].progress,
                           );
                         }
                       },
@@ -389,9 +389,9 @@ class _ScrollableStepperSampleScreenState extends State<ScrollableStepperSampleS
                         if (currentStep < widget.stepperItemList.length) {
                           stepper.goToStep(
                               currentStatus: GSStepStatusEnum.success,
-                              nextIndex: stepper.currentIndex + 1,
-                              currentStepProgress: 100,
-                              nextStepProgress: 30);
+                              newIndex: stepper.currentIndex + 1,
+                              oldStepProgress: 100,
+                              newStepProgress: 30);
                         }
                       },
                     ),

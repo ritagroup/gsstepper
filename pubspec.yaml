@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
-  syncfusion_flutter_gauges: ^20.2.38
+  syncfusion_flutter_gauges: ^26.1.42
 
 dev_dependencies:
   flutter_test:
