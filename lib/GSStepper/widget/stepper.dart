@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gsstepper/GSStepper/model/stepper_style.dart';
 import 'package:gsstepper/GSStepper/widget/fixed_stepper.dart';
+import 'package:gsstepper/GSStepper/widget/simple_stepper.dart';
 
 import '../model/gs_steper_data.dart';
 import '../model/step_model.dart';
@@ -20,6 +21,18 @@ class GSStepper extends StatelessWidget {
   }) : super(key: key) {
     stepperBehavior = StepperBehavior.fixed;
   }
+  GSStepper.simple({
+    required this.steps,
+    required this.onNextStep,
+    this.style,
+    this.stepWidth,
+    required this.currentIndex,
+    this.onComplete,
+    required this.stepperData,
+    Key? key,
+  }) : super(key: key) {
+    stepperBehavior = StepperBehavior.simple;
+  }
 
   GSStepper.scrollable({
     Key? key,
@@ -34,12 +47,12 @@ class GSStepper extends StatelessWidget {
     stepperBehavior = StepperBehavior.scrollable;
   }
 
+
+
   final List<GSStepModel> steps;
   StepperStyle? style;
   final GSStepperData stepperData;
-
   int currentIndex;
-
   double? stepWidth;
   VoidCallback? onComplete;
   ValueChanged<int> onNextStep;
@@ -67,7 +80,15 @@ class GSStepper extends StatelessWidget {
         style: style!,
         stepperData: stepperData,
       );
-    } else {
+    } else if(stepperBehavior == StepperBehavior.simple){
+      return GSSimpleStepper(
+        steps: steps,
+        style: style!,
+        stepperData: stepperData,
+        stepWidth: stepWidth,
+
+      );
+    }else {
       return Container();
     }
   }
@@ -78,33 +99,33 @@ class GSStepper extends StatelessWidget {
 
   _configureFirstStep() {
     _findStepByIndex(0).status = GSStepStatusEnum.active;
-    _findStepByIndex(0).progress = 50;
+    _findStepByIndex(0).progress = 100;
   }
 
   goToStep({
     required GSStepStatusEnum currentStatus,
-    required int nextIndex,
-    double nextStepProgress = 50,
-    double currentStepProgress = 100,
+    required int newIndex,
+    double newStepProgress = 0,
+    double oldStepProgress = 100,
   }) {
-    if (nextIndex >= 0) {
-      if (nextIndex >= steps.length) {
+    if (newIndex >= 0) {
+      if (newIndex >= steps.length) {
         onComplete?.call();
       } else {
-        GSStepModel currentStep = _findStepByIndex(currentIndex);
-        GSStepModel nextStep = _findStepByIndex(nextIndex);
+        GSStepModel oldStep = _findStepByIndex(currentIndex);
+        GSStepModel newStep = _findStepByIndex(newIndex);
 
-        _configureCurrentStep(
-          currentStep,
+        _configureOldStep(
+          oldStep,
           currentStatus,
-          currentStepProgress,
+          oldStepProgress,
         );
         _configureNextStep(
-          nextStep,
-          nextStep.status != GSStepStatusEnum.success ? 30 : nextStepProgress,
+          newStep,
+          newStep.status != GSStepStatusEnum.success ? 100 : newStepProgress,
         );
 
-        onNextStep(nextIndex);
+        onNextStep(newIndex);
       }
     }
   }
@@ -116,22 +137,22 @@ class GSStepper extends StatelessWidget {
     nextStep.status = GSStepStatusEnum.active;
     nextStep.progress = nextStepProgress;
     if (stepperBehavior == StepperBehavior.scrollable) {
-      _scrollToNexStep(nextStep);
+      _scrollToNewStep(nextStep);
     }
   }
 
-  _configureCurrentStep(
-    GSStepModel currentStep,
-    GSStepStatusEnum currentStatus,
-    double currentStepProgress,
+  _configureOldStep(
+    GSStepModel oldStep,
+    GSStepStatusEnum oldStatus,
+    double oldStepProgress,
   ) {
-    currentStep.status = currentStatus;
-    currentStep.progress = currentStepProgress;
+    oldStep.status = oldStatus;
+    oldStep.progress = oldStepProgress;
   }
 
-  _scrollToNexStep(GSStepModel nextStep) {
+  _scrollToNewStep(GSStepModel newStep) {
     _controller.position.ensureVisible(
-      nextStep.globalKey!.currentContext!.findRenderObject()!,
+      newStep.globalKey!.currentContext!.findRenderObject()!,
       alignment: 0.5, // Aligns the image in the middle.
       duration: const Duration(milliseconds: 300), // So it does not jump.
     );

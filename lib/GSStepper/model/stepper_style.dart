@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../values/gs_stepper_colors.dart';
 
-enum StepperBehavior { fixed, scrollable }
+enum StepperBehavior { fixed, scrollable , simple }
 
 class StepperStyle {
   Color inActiveIconColor;
@@ -19,6 +19,7 @@ class StepperStyle {
   Color errorStatusBackgroundColor;
   Color successStatusBackgroundColor;
   Color inActiveStatusBackgroundColor;
+  Color borderColor;
   TextStyle activeStatusTextStyle;
   TextStyle inActiveStatusTextStyle;
   TextStyle successStatusTextStyle;
@@ -57,12 +58,13 @@ class StepperStyle {
     Widget? successIconAssets,
     Widget? errorIconAssets,
     bool? showLastProgress,
+    Color? borderColor ,
   })  : inActiveIconColor = inActiveIconColor ?? GSStepperColor.textColor2,
         activeIconColor = activeIconColor ?? GSStepperColor.white,
         activeIconBackgroundColor = activeIconBackgroundColor ?? GSStepperColor.blue,
         inActiveIconBackgroundColor = inActiveIconBackgroundColor ?? GSStepperColor.divider,
         inActiveProgressBarColor = inActiveProgressBarColor ?? GSStepperColor.divider,
-        activeProgressBarColor = activeProgressBarColor ?? GSStepperColor.blue,
+        activeProgressBarColor = activeProgressBarColor ?? GSStepperColor.green,
         activeStatusBackgroundColor = activeStatusBackgroundColor ?? GSStepperColor.fadeBlue,
         inActiveStatusBackgroundColor = inActiveStatusBackgroundColor ?? Colors.transparent,
         errorIconBackgroundColor = errorIconBackgroundColor ?? GSStepperColor.red,
@@ -70,6 +72,7 @@ class StepperStyle {
         successProgressBarColor = successProgressBarColor ?? GSStepperColor.green,
         successStatusBackgroundColor = successProgressBarColor ?? GSStepperColor.fadeGreen,
         errorStatusBackgroundColor = successProgressBarColor ?? GSStepperColor.fadeRed,
+        borderColor = borderColor ?? GSStepperColor.black,
         successIconBackgroundColor = successIconBackgroundColor ?? GSStepperColor.green,
         activeStatusTextStyle = activeStatusTextStyle ??
             const TextStyle(color: GSStepperColor.blue, fontWeight: FontWeight.w500, fontSize: 10.0),
